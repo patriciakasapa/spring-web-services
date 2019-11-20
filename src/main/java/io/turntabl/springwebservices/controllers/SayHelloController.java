@@ -9,9 +9,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+@Api
 @RestController
 public class SayHelloController {
 
+    @ApiOperation("says hello")
     @GetMapping("sayhello")
     public HelloMessage sayHello(
             @RequestParam(name="name", defaultValue = "francis")

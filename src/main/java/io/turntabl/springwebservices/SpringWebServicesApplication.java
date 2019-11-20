@@ -8,6 +8,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import javax.sql.DataSource;
 
+@EnableSwagger2
 @SpringBootApplication
 public class SpringWebServicesApplication {
 
