@@ -12,9 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class SayHelloController {
 
-    @Autowired
-    private JdbcTemplate tmpl;
-
     @GetMapping("sayhello")
     public HelloMessage sayHello(
             @RequestParam(name="name", defaultValue = "francis")
